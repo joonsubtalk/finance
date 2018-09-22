@@ -1,1 +1,11 @@
 @import './config/u-responsive.scss';
+
+// Imports
+@import './container/AddTransaction/c-addTransaction.scss';
+@import './components/InputField/o-inputField.scss';
+@import './container/Transaction/c-transaction.scss';
+
+html,
+body {
+    font-family: 'Arimo', sans-serif;
+}

@@ -1,0 +1,19 @@
+@import '../../config/shared.scss';
+
+.o-inputField {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+
+    &__label {
+        color: $COLOR_LIGHTGRAPHITE;
+        font-size: $mdsmText;
+        text-transform: capitalize;
+    }
+    &__input {
+        border: none;
+        border-bottom: 1px solid $COLOR_FROST;
+        outline: none;
+        width: 100%;
+        font-size: $mdlgText;
+    }
+}

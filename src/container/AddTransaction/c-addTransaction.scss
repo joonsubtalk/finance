@@ -1,0 +1,40 @@
+@import '../../config/shared.scss';
+
+.c-addTransaction {
+    background-color: $COLOR_FROST;
+    padding: 0.15rem;
+
+    &__card {
+        display: none;
+        padding: 1rem;
+        margin: 1rem;
+        margin-top: 0;
+        background-color: $COLOR_WHITE;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    &__button {
+        margin-top: 1rem;
+        width: 100%;
+        background-color: dodgerblue;
+        border: none;
+        color: $COLOR_FROST;
+        padding: 1rem;
+    }
+
+    &__prompt {
+        border-top: 2px solid dodgerblue;
+        background-color: $COLOR_WHITE;
+        margin: 0 1rem;
+        padding: 0.5rem;
+        font-size: $mdText;
+    }
+}
+
+.c-addTransaction--open {
+    .c-addTransaction__card {
+        display: block;
+    }
+}

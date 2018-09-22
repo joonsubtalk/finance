@@ -1,0 +1,27 @@
+@import '../../config/shared.scss';
+
+.c-transaction {
+    font-size: 1rem;
+    padding: 0.5rem;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: "ca ca am" "me me ed";
+    border-bottom: 1px solid $COLOR_FROST;
+
+    &__category {
+        grid-area: ca;
+        font-size: $mdlgText;
+    }
+    &__merchant {
+        grid-area: me;
+        font-size: 0.9rem;
+        color: $COLOR_LIGHTGRAPHITE;
+    }
+    &__amount {
+        grid-area: am;
+        text-align: right;
+    }
+}
