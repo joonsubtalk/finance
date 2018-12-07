@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Fake from './container/Fake';
 import AddTransaction from './container/AddTransaction/AddTransaction';
-import Transaction from './container/Transaction/Transaction';
+import TransactionList from './container/TransactionList/TransactionList';
+import Footer from './container/Footer/Footer';
 
 
 class App extends Component {
@@ -10,9 +11,8 @@ class App extends Component {
     return (
       <div className="App">
         <AddTransaction />
-        <Fake />
-        <Transaction />
-        <Transaction />
+        {/* <Fake /> */}
+        <TransactionList />
         <div>
           Friday 21st September________Today
           <div>Food</div>
@@ -31,6 +31,7 @@ class App extends Component {
           <div>Food</div>
           <div>Total</div>
         </div>
+        <Footer />
       </div>
     );
   }

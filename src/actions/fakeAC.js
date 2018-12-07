@@ -12,31 +12,47 @@ export const fakeAction = (payload) => {
 
 export const fakeThunk = () => {
 
-	return function fakeThunkCb(dispatch: reduxDispatch) {
+	return async function fakeThunkCb(dispatch) {
 
-		dispatch(fakeAction('test'));
+		try {
 
-		return fetch('https://jsonplaceholder.typicode.com/todos/1')
-			.then((res) => {
+			const that = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+			dispatch(fakeAction('try'));
+			dispatch(fakeAction(that.url));
+			console.log('that.completed', that.url);
 
-				dispatch(fakeAction('try'));
+		} catch (e) {
 
-				if (res.status >= 200 && res.status < 300) {
+			dispatch(fakeAction(e));
 
-					return dispatch(fakeAction('something'));
+		}
+	}
 
-				}
+	// return function fakeThunkCb(dispatch) {
 
-				return Promise.reject(res);
+	// 	dispatch(fakeAction('test'));
 
-			})
-			.catch((error) => {
+	// 	return fetch('https://jsonplaceholder.typicode.com/todos/1')
+	// 		.then((res) => {
 
-				dispatch(fakeAction('error'));
+	// 			dispatch(fakeAction('try'));
 
-			});
+	// 			if (res.status >= 200 && res.status < 300) {
 
-	};
+	// 				return dispatch(fakeAction('something'));
+
+	// 			}
+
+	// 			return Promise.reject(res);
+
+	// 		})
+	// 		.catch((error) => {
+
+	// 			dispatch(fakeAction('error'));
+
+	// 		});
+
+	// };
 
 };
 

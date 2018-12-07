@@ -1,0 +1,40 @@
+{
+    "transactions": [
+        {
+            "id": "109238409128340982134",
+            "name": "Chipotle",
+            "amount": "7.99",
+            "card": "VISA",
+            "category": "food",
+            "date": "20181013",
+            "active": true
+        },
+        {
+            "id": "4820934802938409238439",
+            "name": "Google iPhone S10",
+            "amount": "1200.99",
+            "card": "MASTER CARD",
+            "category": "fun",
+            "date": "20181013",
+            "active": true
+        },
+        {
+            "id": "9238049582039485949449",
+            "name": "Panda Express",
+            "amount": "8.99",
+            "card": "DISCOVER",
+            "category": "food",
+            "date": "20181013",
+            "active": true
+        },
+        {
+            "id": "2039482095834050349549",
+            "name": "In-N-Out",
+            "amount": "8.99",
+            "card": "VISA",
+            "category": "food",
+            "date": "20181012",
+            "active": true
+        }
+    ]
+}

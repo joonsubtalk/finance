@@ -24,4 +24,10 @@
         grid-area: am;
         text-align: right;
     }
+    &__edit {
+        grid-area: ed;
+        text-align: right;
+        font-size: 0.9rem;
+        color: $COLOR_LIGHTGRAPHITE;
+    }
 }
